@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.modes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.modes button {
+    padding: 0.75rem 1rem;
+    border: none;
+    background: #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modes button:hover,
+.modes button.active {
+    background: #2196f3;
+    color: #fff;
+}
+
+
+#timer-display {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.controls button {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    
+    
+}
+
+
+#start {
+    background: #28a745;
+    
+}
+
+#start:hover {
+    background: #218838;
+}
+
+#pause {
+    background: #fd7e14;
+    
+}
+
+#pause:hover {
+    background: #e9690f;
+}
+
+#stop {
+    background: #dc3545;
+   
+}
+
+#stop:hover {
+    background: #c82333;
+}
+
+#reset {
+    background: #6c757d;
+    
+}
+
+#reset:hover {
+    background: #5a6268;
+}
+
+
+@media (max-width: 480px) {
+    #timer-display {
+        font-size: 2.5rem;
+    }
+}
